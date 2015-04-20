@@ -1,0 +1,74 @@
+//Susy setup --------------------------
+$total-columns		: 12;
+$column-width		: 4em;
+$gutter-width		: 1em;
+$grid-padding		: $gutter-width;
+
+@include border-box-sizing;
+
+
+
+.dl-sandbox {
+	.jumbotron {
+		@include container;
+		text-align: center;
+		border: 1px solid $base3;
+		padding: 30px;
+		margin: 20px auto;
+		width: 80%;
+		min-width: 300px;
+		border-radius: 10px;
+		.dl-logo {
+			width: 200px;
+		}
+		h1 {
+			margin: 20px 0;
+		}
+		p {
+			margin: 10px 0;
+		}
+		@media (min-width: 768px) {
+
+		}
+		@media (min-width: 992px) {
+			padding: 40px 60px;
+			margin: 40px auto;
+			max-width: 1200px;
+		}
+	}
+	.container {
+		@include container;
+	}
+	footer {
+		.container {
+			width: 80%;
+			min-width: 300px;
+			margin: 20px auto;
+			@media (min-width: 768px) {
+				
+			}
+			@media (min-width: 992px) {
+				max-width: 1200px;
+			}
+		}
+		.copyright, .social-links {
+			text-align: center;
+		}
+		.copyright {
+			padding: 10px 0;
+		}
+		@media (min-width: 768px) {
+			.copyright {
+				float: left;
+				width: 48%;
+				text-align: left;
+			}
+			.social-links {
+				float: right;
+				width: 52%;
+				text-align: right;
+			}
+		}
+		
+	}
+}

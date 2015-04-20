@@ -1,0 +1,45 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+html { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+a img { border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+
+html { font-size: 10px; }
+
+body { background: #002b36 url("../images/graphpapers/graphpaper-solarized-dark.png") repeat fixed; color: #fdf6e3; font-family: "Open Sans", sans-serif; font-size: 1.6rem; line-height: 1.5; }
+
+a, a:visited { color: #b58900; }
+
+h1 { font-size: 4rem; }
+
+*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.dl-sandbox .jumbotron { max-width: 100%; margin-left: auto; margin-right: auto; text-align: center; border: 1px solid #fdf6e3; padding: 30px; margin: 20px auto; width: 80%; min-width: 300px; border-radius: 10px; }
+.dl-sandbox .jumbotron:after { content: " "; display: block; clear: both; }
+.dl-sandbox .jumbotron .dl-logo { width: 200px; }
+.dl-sandbox .jumbotron h1 { margin: 20px 0; }
+.dl-sandbox .jumbotron p { margin: 10px 0; }
+@media (min-width: 992px) { .dl-sandbox .jumbotron { padding: 40px 60px; margin: 40px auto; max-width: 1200px; } }
+.dl-sandbox .container { max-width: 100%; margin-left: auto; margin-right: auto; }
+.dl-sandbox .container:after { content: " "; display: block; clear: both; }
+.dl-sandbox footer .container { width: 80%; min-width: 300px; margin: 20px auto; }
+@media (min-width: 992px) { .dl-sandbox footer .container { max-width: 1200px; } }
+.dl-sandbox footer .copyright, .dl-sandbox footer .social-links { text-align: center; }
+.dl-sandbox footer .copyright { padding: 10px 0; }
+@media (min-width: 768px) { .dl-sandbox footer .copyright { float: left; width: 48%; text-align: left; }
+  .dl-sandbox footer .social-links { float: right; width: 52%; text-align: right; } }
+
+.social-links svg { width: auto; }
+.social-links svg path { fill: #fdf6e3; }
+.social-links .social-link { width: 50px; height: 50px; border-radius: 50%; border: 1px solid #fdf6e3; display: inline-block; padding: 5px; margin: 5px; }

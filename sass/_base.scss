@@ -1,0 +1,18 @@
+html {
+	font-size: 10px;
+}
+body {
+	background: $base03 url('../images/graphpapers/graphpaper-solarized-dark.png') repeat fixed;
+	color: $base3;
+	font-family: $sans;
+	font-size: 1.6rem;
+	line-height: 1.5;
+	// background: $base3 url('../images/graphpapers/graphpaper-solarized-light.png') repeat fixed;
+	// color: $base03;
+}
+a, a:visited {
+	color: $yellow;
+}
+h1 {
+	font-size: 4rem;
+}
