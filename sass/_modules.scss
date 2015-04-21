@@ -49,3 +49,13 @@
 		}
 	}
 }
+.thoughts {
+	p {
+		font-family: $cursive;
+		font-size: 3rem;
+	}
+	.author {
+		text-align: right;
+		margin-top: 15px;
+	}
+}

@@ -59,3 +59,6 @@ h1 { font-size: 4rem; }
 .four-o-four .jumbotron h3 { font-size: 2.4rem; }
 .four-o-four .jumbotron .btn { background-color: transparent; color: #b58900; border: 1px solid #b58900; margin: 20px 0; }
 .four-o-four .jumbotron .btn:hover { font-weight: 600; text-decoration: underline; }
+
+.thoughts p { font-family: "Indie Flower", cursive; font-size: 3rem; }
+.thoughts .author { text-align: right; margin-top: 15px; }
