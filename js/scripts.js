@@ -10,3 +10,4 @@ function factorial(num1){
 		}
 	}
 }
+

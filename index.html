@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="sandboxApp">
 <head>
 	<meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="dl-sandbox">
+<body class="dl-sandbox" >
 	<section class="container">
 		<div class="jumbotron">
 			<svg version="1.1" id="dl-logo" class="dl-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
@@ -67,11 +67,17 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4" ng-app>
+			<div class="col-md-4">
 				<h2>Random Thought of the Day</h2>
-				<div class="sidebar thoughts" ng-controller="thoughts">
-					<p class="thought">Technically we're all half-centaur. </p>
-					<p class="author">&dash; Nick Offerman</p>
+				<div class="sidebar thoughts" ng-controller="ThoughtController as ctrl">
+					<p class="thought">{{ctrl.thought}}</p>
+					<p class="author">&dash; {{ctrl.thinker}}</p>
+					<ul>
+						<li ng-repeat="item in ctrl.thoughtList">
+							<p class="thought">{{item.thought}}</p>
+							<p class="author">{{item.author}}</p>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -113,9 +119,11 @@
 			</div>
 		</div>
 	</footer>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular-route.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<script src="js/scripts.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>
