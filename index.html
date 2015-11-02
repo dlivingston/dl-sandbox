@@ -42,14 +42,19 @@
 				<div class="projects">
 					<p>Any and/or all of the projects listed below are in various states of completion and functionality. Proceed at your own risk.</p>
 					<div class="project-card">
-						<h3><a class="btn btn-primary" href="/cheese-shop">Project Cheese Shop</a></h3>
-						<p class="date"><strong>Last Updated:</strong> 2015-08-26</p>
+						<h3><a class="btn btn-primary" href="/tcs-responsive">Project TCS Responsive</a></h3>
+						<p class="date"><strong>Last Updated:</strong> 2015-11-02</p>
+						<p class="notes"><strong>Notes:</strong> A Responsive Website Prototype.</p>
+					</div>
+					<div class="project-card">
+						<h3><a class="btn btn-primary" href="/cheese-shop/mobile.html">Project Cheese Shop</a></h3>
+						<p class="date"><strong>Last Updated:</strong> 2015-11-02</p>
 						<p class="notes"><strong>Notes:</strong> jQuery Mobile Practice</p>
 						<a href="https://github.com/dlivingston/cheese-shop">GitHub Repo</a>
 					</div>
 					<div class="project-card">
-						<h3><a class="btn btn-primary" href="/crunchy-frog">Project Crunchy Frog</a></h3>
-						<p class="date"><strong>Last Updated:</strong> 2015-05-16</p>
+						<h3><a class="btn btn-primary" href="/crunchy-frog/u-and-r.html">Project Crunchy Frog</a></h3>
+						<p class="date"><strong>Last Updated:</strong> 2015-11-02</p>
 						<p class="notes"><strong>Notes:</strong> AngularJS Practice</p>
 						<a href="https://github.com/dlivingston/crunchy-frog">GitHub Repo</a>
 					</div>
@@ -72,12 +77,6 @@
 				<div class="sidebar thoughts" ng-controller="ThoughtController as ctrl">
 					<p class="thought">{{ctrl.thought}}</p>
 					<p class="author">&dash; {{ctrl.thinker}}</p>
-					<ul>
-						<li ng-repeat="item in ctrl.thoughtList">
-							<p class="thought">{{item.thought}}</p>
-							<p class="author">{{item.author}}</p>
-						</li>
-					</ul>
 				</div>
 			</div>
 		</div>
